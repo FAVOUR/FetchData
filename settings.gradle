@@ -1,0 +1,2 @@
+include ':app', ':fetchdata-lib'
+rootProject.name='FetchData'
