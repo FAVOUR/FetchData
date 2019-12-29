@@ -49,7 +49,6 @@ class FetchData(var context: Context) : LifecycleObserver {
         }
     }
 
-
 //    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
 //    void cancelAll()
 //    {
