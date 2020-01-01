@@ -15,16 +15,18 @@ class FetchData(var context: Context) : LifecycleObserver {
 
     class Builder {
 
-        lateinit var context: Context
+        var context: Context
         lateinit var setupDetails: SetupDetails
-        lateinit var cache: LibraryLruCache
 
+        companion object {
+            lateinit var cache: LibraryLruCache
 
+        }
         /** Start building a new [FetchData] instance.  */
 
-        fun Builder(context: Context) {
+        constructor(context: Context) {
             checkNotNull(context, "context == null")
-            this.context = context.applicationContext
+            this.context = context
         }
 
 
@@ -34,6 +36,7 @@ class FetchData(var context: Context) : LifecycleObserver {
         fun includeSetupDetails(setupDetails: SetupDetails): Builder {
             checkNotNull(setupDetails, "setupDetails is null")
             this.setupDetails = setupDetails
+
             return this
         }
 
