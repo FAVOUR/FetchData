@@ -18,10 +18,8 @@ class FetchData(var context: Context) : LifecycleObserver {
         var context: Context
         lateinit var setupDetails: SetupDetails
 
-        companion object {
-            lateinit var cache: LibraryLruCache
+        lateinit var cache: LibraryLruCache
 
-        }
         /** Start building a new [FetchData] instance.  */
 
         constructor(context: Context) {
@@ -50,6 +48,11 @@ class FetchData(var context: Context) : LifecycleObserver {
 
             return FetchData(context = context)
         }
+    }
+
+    fun load(path: String) {
+
+//        RequestBuilder(bitmapConfig = )
     }
 
 //    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
