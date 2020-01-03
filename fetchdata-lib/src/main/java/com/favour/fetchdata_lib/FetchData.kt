@@ -50,6 +50,11 @@ class FetchData(var context: Context) : LifecycleObserver {
         }
     }
 
+    fun load(path: String) {
+
+//        RequestBuilder(bitmapConfig = )
+    }
+
 //    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
 //    void cancelAll()
 //    {

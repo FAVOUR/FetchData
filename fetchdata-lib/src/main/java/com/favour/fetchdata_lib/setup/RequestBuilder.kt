@@ -5,14 +5,14 @@ import android.net.Uri
 
 
 /**This class inherits the parameters contained by the users class the builder class*/
-abstract class RequestBuilder {
+class RequestBuilder {
 
 
 //    class Builder {
 
     var uri: Uri? = null
     var resourceId = 0
-    var config: Bitmap.Config? = null
+    var bitmapConfig: Bitmap.Config? = null
 
     constructor(
         uri: Uri?,
@@ -21,7 +21,7 @@ abstract class RequestBuilder {
     ) {
         this.uri = uri
         this.resourceId = resourceId
-        config = bitmapConfig
+        this.bitmapConfig = bitmapConfig
     }
 
 //    }
