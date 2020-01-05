@@ -8,7 +8,7 @@ import android.net.Uri
 class RequestBuilder {
 
 
-//    class Builder {
+    class Builder {
 
     var uri: Uri? = null
     var resourceId = 0
@@ -22,9 +22,11 @@ class RequestBuilder {
         this.uri = uri
         this.resourceId = resourceId
         this.bitmapConfig = bitmapConfig
+
+
     }
 
-//    }
+    }
 
 }
 
