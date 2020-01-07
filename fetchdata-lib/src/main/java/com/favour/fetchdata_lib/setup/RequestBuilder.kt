@@ -7,7 +7,6 @@ import android.net.Uri
 /**This class inherits the parameters contained by the users class the builder class*/
 class RequestBuilder {
 
-
     class Builder {
 
     var uri: Uri? = null

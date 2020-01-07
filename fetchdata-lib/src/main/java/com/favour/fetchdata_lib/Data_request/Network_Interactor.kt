@@ -11,12 +11,13 @@ import java.io.IOException
 class Network_Interactor : RequestHandler() {
     override fun load(requestCreator: RequestCreator, callback: Callback) {
 
-        var request = createRequest(requestCreator)
+        val request = createRequest(requestCreator)
         val req = OkHttpClient()
 
         req.newCall(request).enqueue(object : okhttp3.Callback {
             override fun onFailure(call: Call, e: IOException) {
                 callback.onError(e)
+
             }
 
             override fun onResponse(call: Call, response: Response) {
