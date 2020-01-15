@@ -45,7 +45,9 @@ class BitMapUtils {
 
         private decodeStreamPreP():Bitmap
         {
+            val isWebPFile =
 
+            val bitmap: Bitmap?
         }
 
     }
